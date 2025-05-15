@@ -1,10 +1,29 @@
 import java.util.Scanner;
 
+import db.incioCorreo;
+
 public class ObjetoMenuInicioSeccion {
     // PARTE QUE TRANAJA JOEL
     public void CorreoElectronico(){
-        System.out.println("Colocar los comandos para el inicio de secion por correo electronico");
-    }
+      incioCorreo user = new incioCorreo();
+      Scanner var2 = new Scanner(System.in);
+      System.out.println("······ Bienvenido a Carmesi DigitalTech ······ ");
+      System.out.println("----------------------------------------------- ");
+      System.out.println("        Ingrese correo electronico de usuario       ");
+      String user1 = var2.nextLine();
+      System.out.println("        Ingrese contrasenia o ingrese 1 si olvido la contrasenia      ");
+      String contra = var2.nextLine();  
+      
+         switch (contra) {
+            case "1":
+               user.correoPerdido();
+               break;
+            case "Hola":
+               System.out.println("5023 ");
+               //user.ChatTexto(); ingresa el usuario
+         }
+
+   }
 
 
     // Parte que trabaja Rubi
